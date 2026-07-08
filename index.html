@@ -21,7 +21,7 @@
       <header class="site-header">
         <div class="container nav-bar">
           <a class="brand-mark" href="#top">
-            <span class="brand-mark__icon">✿</span>
+            <img class="brand-mark__logo" src="site-logo.webp" alt="Fresh & Clean Dog Grooming logo" />
             <span>
               <strong>Fresh & Clean</strong>
               <small>Phoenix Dog Grooming</small>
@@ -34,7 +34,7 @@
             <a href="#about">About</a>
             <a href="#faq">FAQ</a>
           </nav>
-          <a class="button button--primary" href="#contact">Book Now</a>
+          <a class="button button--primary" href="#contact"><span class="button__icon" aria-hidden="true">🐾</span><span>Book Now</span></a>
         </div>
       </header>
 
@@ -43,23 +43,24 @@
           <div class="container hero__grid">
             <div class="hero__content">
               <span class="eyebrow">Personal, gentle grooming in Phoenix</span>
-              <h1>Fresh cuts, soft coats, and a grooming experience pet parents feel good about.</h1>
+              <h1>A Phoenix dog grooming experience pet parents feel good about</h1>
               <p class="hero__lead">
                 We help Phoenix pups look adorable and feel comfortable with one-on-one grooming,
                 thoughtful handling, and a bright, welcoming experience from drop-off to pickup.
               </p>
               <div class="hero__actions">
-                <a class="button button--primary" href="#contact">Book a Groom</a>
+                <a class="button button--primary" href="#contact"><span class="button__icon" aria-hidden="true">🐾</span><span>Book a Groom</span></a>
                 <a class="button button--secondary" href="#pricing">See Pricing</a>
               </div>
             </div>
 
             <div class="hero-card">
               <div class="hero-card__photo">
-                <div class="photo-placeholder photo-placeholder--large" aria-label="Hero dog photo placeholder"></div>
-              </div>
-              <div class="hero-card__details">
-                <div class="hero-card__pill">Text-friendly booking</div>
+                <img
+                  class="hero-card__image"
+                  src="hero-dog-grooming.jpeg"
+                  alt="A happy dog getting groomed with scissors at a dog grooming salon"
+                />
               </div>
             </div>
           </div>
@@ -68,12 +69,14 @@
 
         <section class="section about section--paws" id="about">
           <div class="container about__layout">
-            <div class="photo-placeholder photo-placeholder--about">
-              <span>About the groomer photo</span>
-            </div>
+            <img
+              class="about__image"
+              src="about-groomer.jpeg"
+              alt="A Phoenix dog groomer smiling while grooming a fluffy white dog on the grooming table"
+            />
             <div class="about__card about__card--split">
               <span class="eyebrow">About the groomer</span>
-              <h2>Meet the person behind the bows, bubbly baths, and patient one-on-one care.</h2>
+              <h2>Meet Phoenix's Favorite Dog Groomer</h2>
               <p>
                 Hi, I’m Jessica, a Phoenix groomer who believes great grooming should feel calm, kind, and
                 personal. I love helping dogs feel clean and comfortable while making pet parents feel fully
@@ -82,6 +85,7 @@
               <p>
                 My goal is simple: send every pup home looking adorable, feeling better, and excited to come back.
               </p>
+              <a class="button button--primary about__button" href="mailto:hello@freshandcleanphoenix.com"><span class="service-card__paw" aria-hidden="true">🐾</span><span>Talk to Jessica</span></a>
             </div>
           </div>
         </section>
@@ -98,40 +102,76 @@
             </div>
             <div class="card-grid card-grid--services">
               <article class="info-card">
-                <div class="photo-placeholder photo-placeholder--service"><span>Bath &amp; brush photo</span></div>
-                <div class="info-card__icon">🛁</div>
+                <img
+                  class="service-card__image"
+                  src="service-bath-brush.jpg"
+                  alt="A dog getting a bath during a bath and brush grooming service"
+                />
                 <h3>Bath & Brush</h3>
                 <p>Warm bath, blow dry, brush-out, ear cleaning, and a polished finish for regular upkeep.</p>
+                <div class="service-card__actions">
+                  <a class="button button--primary service-card__button" href="#contact"><span class="service-card__paw" aria-hidden="true">🐾</span><span>Book Now</span></a>
+                </div>
               </article>
               <article class="info-card">
-                <div class="photo-placeholder photo-placeholder--service"><span>Full groom photo</span></div>
-                <div class="info-card__icon">✂️</div>
+                <img
+                  class="service-card__image"
+                  src="service-full-groom.jpeg"
+                  alt="A dog getting a full groom haircut with grooming scissors"
+                />
                 <h3>Full Groom</h3>
                 <p>Bath, haircut, nail trim, sanitary trim, face tidy, and a style tailored to your dog’s coat.</p>
+                <div class="service-card__actions">
+                  <a class="button button--primary service-card__button" href="#contact"><span class="service-card__paw" aria-hidden="true">🐾</span><span>Book Now</span></a>
+                </div>
               </article>
               <article class="info-card">
-                <div class="photo-placeholder photo-placeholder--service"><span>Puppy intro photo</span></div>
-                <div class="info-card__icon">✨</div>
+                <img
+                  class="service-card__image"
+                  src="service-puppy-groom.jpg"
+                  alt="A small puppy during a puppy intro grooming appointment"
+                />
                 <h3>Puppy Intro Groom</h3>
                 <p>A gentle first experience focused on comfort, confidence, and positive associations.</p>
+                <div class="service-card__actions">
+                  <a class="button button--primary service-card__button" href="#contact"><span class="service-card__paw" aria-hidden="true">🐾</span><span>Book Now</span></a>
+                </div>
               </article>
               <article class="info-card">
-                <div class="photo-placeholder photo-placeholder--service"><span>Mini tidy-up photo</span></div>
-                <div class="info-card__icon">🐾</div>
+                <img
+                  class="service-card__image"
+                  src="service-mini-tidy-up.jpg"
+                  alt="A small dog getting a face tidy-up trim during grooming"
+                />
                 <h3>Mini Tidy-Up</h3>
                 <p>Ideal between full appointments for paws, eyes, face, and sanitary areas.</p>
+                <div class="service-card__actions">
+                  <a class="button button--primary service-card__button" href="#contact"><span class="service-card__paw" aria-hidden="true">🐾</span><span>Book Now</span></a>
+                </div>
               </article>
               <article class="info-card">
-                <div class="photo-placeholder photo-placeholder--service"><span>De-shed treatment photo</span></div>
-                <div class="info-card__icon">🌵</div>
+                <img
+                  class="service-card__image"
+                  src="service-deshed-treatment.webp"
+                  alt="A small dog getting a de-shed grooming treatment in the bath"
+                />
                 <h3>De-Shed Treatment</h3>
                 <p>Extra brushing and coat-release care to cut down on tumbleweeds of fur at home.</p>
+                <div class="service-card__actions">
+                  <a class="button button--primary service-card__button" href="#contact"><span class="service-card__paw" aria-hidden="true">🐾</span><span>Book Now</span></a>
+                </div>
               </article>
               <article class="info-card">
-                <div class="photo-placeholder photo-placeholder--service"><span>Spa add-ons photo</span></div>
-                <div class="info-card__icon">🍊</div>
+                <img
+                  class="service-card__image"
+                  src="service-spa-add-ons.webp"
+                  alt="A dog enjoying a spa-style wash during a grooming add-on treatment"
+                />
                 <h3>Spa Add-Ons</h3>
                 <p>Blueberry facials, teeth brushing, nail buffing, and seasonal upgrades for extra pampering.</p>
+                <div class="service-card__actions">
+                  <a class="button button--primary service-card__button" href="#contact"><span class="service-card__paw" aria-hidden="true">🐾</span><span>Book Now</span></a>
+                </div>
               </article>
             </div>
           </div>
@@ -141,11 +181,12 @@
           <div class="container pricing__layout">
             <div class="section-heading section-heading--left">
               <span class="eyebrow">Pricing</span>
-              <h2>Clear starting prices with room for coat type, size, and temperament.</h2>
+              <h2>Our starting prices for dog grooming in Phoenix</h2>
               <p>
                 Pricing is easy to understand up front. Final quotes may shift a little based on matting,
                 breed, coat condition, or if extra time is needed for comfort and safety.
               </p>
+              <a class="button button--primary pricing__button" href="#contact"><span class="service-card__paw" aria-hidden="true">🐾</span><span>Book a Grooming</span></a>
             </div>
             <div class="pricing-table">
               <article class="price-card price-card--featured">
@@ -177,39 +218,49 @@
           <div class="container">
             <div class="section-heading">
               <span class="eyebrow">Photos</span>
-              <h2>Swap these placeholders with happy after-groom pups, smiling pickups, and fluffy transformations.</h2>
+              <h2>Some of Our Phoenix Dog Grooming Highlights.</h2>
               <p>
-                This section is ready for real client photos, before-and-afters, or salon moments that help
-                the business feel warm, personal, and trustworthy.
+                Fresh trims, happy faces, and polished finishes that show the kind of clean, feel-good grooming
+                Phoenix pet parents can expect from every visit.
               </p>
             </div>
             <div class="photo-grid">
-              <div class="photo-placeholder photo-placeholder--portrait"><span>Dog portrait photo</span></div>
-              <div class="photo-placeholder photo-placeholder--square"><span>Before & after</span></div>
-              <div class="photo-placeholder photo-placeholder--square"><span>Fresh cut close-up</span></div>
-              <div class="photo-placeholder photo-placeholder--wide"><span>Owner pickup moment</span></div>
+              <img class="gallery-image gallery-image--1" src="gallery-groomed-1.jpg" alt="Freshly groomed white dog wearing a green bandana" />
+              <img class="gallery-image gallery-image--2" src="gallery-groomed-2.jpg" alt="Freshly groomed light-colored dog standing on a grooming table" />
+              <img class="gallery-image gallery-image--3" src="gallery-groomed-3.jpg" alt="Freshly groomed black and white dog with a purple lead" />
+              <img class="gallery-image gallery-image--4" src="gallery-groomed-5.jpg" alt="Freshly groomed white poodle with a styled haircut" />
+              <img class="gallery-image gallery-image--5" src="gallery-groomed-6.jpg" alt="Freshly groomed tan dog wearing a patterned bandana" />
             </div>
           </div>
         </section>
 
         <section class="section service-area" id="service-area">
           <div class="container service-area__layout">
-            <div>
+            <div class="service-area__content">
               <span class="eyebrow">Service area</span>
               <h2>Proudly grooming dogs in Phoenix and nearby neighborhoods.</h2>
-              <p>
-                Great for a local SEO section and reassuring nearby clients that you’re truly in their area.
-              </p>
+              <div class="area-pills">
+                <span>Central Phoenix</span>
+                <span>Arcadia</span>
+                <span>Biltmore</span>
+                <span>North Phoenix</span>
+                <span>Camelback East</span>
+                <span>Paradise Valley</span>
+                <span>Scottsdale border</span>
+                <span>Ahwatukee</span>
+              </div>
             </div>
-            <div class="area-pills">
-              <span>Central Phoenix</span>
-              <span>Arcadia</span>
-              <span>Biltmore</span>
-              <span>North Phoenix</span>
-              <span>Camelback East</span>
-              <span>Paradise Valley</span>
-              <span>Scottsdale border</span>
-              <span>Ahwatukee</span>
+            <div class="service-area__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d528916.0110727989!2d-112.45443274902104!3d33.6044604175757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ%2C%20USA!5e1!3m2!1sen!2sua!4v1783359142608!5m2!1sen!2sua"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                title="Map of Phoenix, Arizona"
+              ></iframe>
             </div>
           </div>
         </section>
@@ -236,6 +287,22 @@
               <details class="faq-item">
                 <summary>Can I request a specific haircut style?</summary>
                 <p>Absolutely. Inspiration photos are welcome, and we’ll talk through what works best for your dog’s coat and maintenance routine.</p>
+              </details>
+              <details class="faq-item">
+                <summary>How long does a grooming appointment usually take?</summary>
+                <p>Most appointments take about 1.5 to 3 hours depending on your dog’s size, coat, and the service booked.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Do you accept matted dogs?</summary>
+                <p>Yes, but we’ll always talk through the safest and kindest option first. Severe matting may require extra time or a shorter comfort-first haircut.</p>
+              </details>
+              <details class="faq-item">
+                <summary>What should I bring to my appointment?</summary>
+                <p>Just bring your pup, any grooming notes, and inspiration photos if you have a specific look in mind.</p>
+              </details>
+              <details class="faq-item">
+                <summary>How do I book an appointment?</summary>
+                <p>You can call, email, or use the booking button on the page and we’ll help you find the best time for your dog.</p>
               </details>
             </div>
           </div>
@@ -285,6 +352,12 @@
           </div>
         </div>
       </footer>
+
+      <aside class="chat-widget" aria-label="Chat with us">
+        <a class="chat-widget__bubble" href="mailto:hello@freshandcleanphoenix.com" aria-label="Chat with us">
+          <span aria-hidden="true">🐾</span>
+        </a>
+      </aside>
     </div>
   </body>
 </html>
