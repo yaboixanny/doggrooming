@@ -128,6 +128,46 @@ img {
   gap: 0.8rem;
 }
 
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(236, 95, 150, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(236, 95, 150, 0.14);
+  color: var(--teal-deep);
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 1rem;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle span + span {
+  margin-top: 0.22rem;
+}
+
+.site-header.is-menu-open .nav-toggle span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.site-header.is-menu-open .nav-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.site-header.is-menu-open .nav-toggle span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
 .social-icon-link {
   display: inline-flex;
   align-items: center;
@@ -367,13 +407,16 @@ img {
 
 .about__image {
   width: 100%;
-  min-height: 460px;
-  height: 100%;
+  max-width: 520px;
+  aspect-ratio: 4 / 5;
+  height: auto;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   border-radius: var(--radius-xl);
   border: 1px solid var(--line);
   box-shadow: 0 12px 34px rgba(135, 47, 87, 0.06);
+  justify-self: end;
+  order: 2;
 }
 
 .hero__curve {
@@ -556,51 +599,19 @@ img {
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  grid-auto-rows: 360px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.1rem;
 }
 
 .gallery-image {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 3 / 4;
+  height: auto;
   object-fit: cover;
   object-position: center;
   border-radius: 30px;
   border: 1px solid rgba(236, 95, 150, 0.12);
   box-shadow: 0 12px 34px rgba(135, 47, 87, 0.08);
-}
-
-.gallery-image:nth-child(-n + 3) {
-  grid-column: span 2;
-}
-
-.gallery-image--4 {
-  grid-column: 2 / span 2;
-}
-
-.gallery-image--5 {
-  grid-column: 4 / span 2;
-}
-
-.gallery-image--1 {
-  object-position: center 28%;
-}
-
-.gallery-image--2 {
-  object-position: center 24%;
-}
-
-.gallery-image--3 {
-  object-position: center 30%;
-}
-
-.gallery-image--4 {
-  object-position: center 18%;
-}
-
-.gallery-image--5 {
-  object-position: 58% 22%;
 }
 
 .about__layout,
@@ -614,6 +625,7 @@ img {
 .about__card {
   padding: 2rem;
   border-radius: var(--radius-xl);
+  order: 1;
 }
 
 .about__layout {
@@ -809,21 +821,15 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .about__image {
+    max-width: 420px;
+    justify-self: center;
+  }
+
   .card-grid--services,
   .pricing-table,
   .photo-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .photo-grid {
-    grid-auto-rows: 300px;
-  }
-
-  .gallery-image,
-  .gallery-image:nth-child(-n + 3),
-  .gallery-image--4,
-  .gallery-image--5 {
-    grid-column: auto;
   }
 
   .hero h1 {
@@ -846,19 +852,66 @@ img {
   }
 
   .nav-bar {
-    flex-wrap: wrap;
+    position: relative;
+    flex-wrap: nowrap;
+    gap: 0.6rem;
+  }
+
+  .brand-mark {
+    gap: 0;
+    flex: 0 0 auto;
+  }
+
+  .brand-mark__text {
+    display: none;
+  }
+
+  .brand-mark__icon {
+    width: 2.7rem;
+    height: 2.7rem;
   }
 
   .header-actions {
     margin-left: auto;
+    gap: 0.45rem;
   }
 
   .site-nav {
-    order: 3;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 0.9rem 1.1rem;
-    justify-content: center;
+    position: absolute;
+    top: calc(100% + 0.65rem);
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem;
+    border-radius: 22px;
+    background: rgba(255, 249, 252, 0.98);
+    border: 1px solid rgba(236, 95, 150, 0.12);
+    box-shadow: 0 18px 40px rgba(135, 47, 87, 0.12);
+    text-align: left;
+  }
+
+  .site-header.is-menu-open .site-nav {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 0.7rem 0.2rem;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .header-book-button {
+    min-height: 3rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.92rem;
+  }
+
+  .header-book-button .button__icon {
+    margin-right: 0.35rem;
   }
 
   .hero {
@@ -871,19 +924,12 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .photo-grid {
-    grid-auto-rows: 320px;
-  }
-
-  .gallery-image,
-  .gallery-image:nth-child(-n + 3),
-  .gallery-image--4,
-  .gallery-image--5 {
-    grid-column: auto;
-  }
-
   .section {
     padding: 4rem 0;
+  }
+
+  .about__image {
+    max-width: 340px;
   }
 
   .footer-grid {

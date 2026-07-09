@@ -3,12 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pause On Shine | Mobile Dog Grooming in Corona, California</title>
+    <title>Paws on Shine | Mobile Dog Grooming in Corona, California</title>
     <meta
       name="description"
-      content="Pause On Shine offers gentle mobile dog grooming in Corona, California with spa baths, tidy trims, de-shedding, and one-on-one care delivered right to your driveway."
+      content="Paws on Shine offers gentle mobile dog grooming in Corona, California with spa baths, tidy trims, de-shedding, and one-on-one care delivered right to your driveway."
     />
     <meta name="google-site-verification" content="1qwhqWNju0gahyKysVnyWm1hKWmBPiungQsjhzU71LQ" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://pawsonshine.com/#website",
+            "url": "https://pawsonshine.com/",
+            "name": "Paws on Shine",
+            "description": "Professional mobile dog grooming specialists serving Corona, CA and surrounding areas."
+          },
+          {
+            "@type": "GroomingService",
+            "@id": "https://pawsonshine.com/#localbusiness",
+            "name": "Paws on Shine",
+            "url": "https://pawsonshine.com/",
+            "telephone": "+1-951-588-7284",
+            "priceRange": "$$",
+            "image": "https://pawsonshine.com/assets/logo.jpg",
+            "description": "Premium mobile dog grooming brought right to your doorstep. Stress-free, cage-free individual care.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Corona",
+              "addressRegion": "CA",
+              "postalCode": "92882",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "33.8753",
+              "longitude": "-117.5664"
+            },
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "Corona",
+                "@id": "https://en.wikipedia.org/wiki/Corona,_California"
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Sierra Del Oro"
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Dos Lagos"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/pawsonshine",
+              "https://www.instagram.com/pawsonshine"
+            ]
+          }
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,12 +78,12 @@
         <div class="container nav-bar">
           <a class="brand-mark" href="#top">
             <span class="brand-mark__icon" aria-hidden="true">✿</span>
-            <span>
-              <strong>Pause On Shine</strong>
+            <span class="brand-mark__text">
+              <strong>Paws on Shine</strong>
               <small>Mobile Grooming in Corona, CA</small>
             </span>
           </a>
-          <nav class="site-nav" aria-label="Primary">
+          <nav class="site-nav" id="site-nav" aria-label="Primary">
             <a href="#services">Services</a>
             <a href="#pricing">Pricing</a>
             <a href="#photos">Photos</a>
@@ -36,18 +91,29 @@
             <a href="#faq">FAQ</a>
           </nav>
           <div class="header-actions">
+            <button
+              class="nav-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="site-nav"
+              aria-label="Open menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a class="button button--primary header-book-button" href="#contact"><span class="button__icon" aria-hidden="true">🐾</span><span>Book Now</span></a>
             <a
               class="social-icon-link"
               href="https://www.instagram.com/paws_on_shine/"
               target="_blank"
               rel="noreferrer"
-              aria-label="Follow Pause On Shine on Instagram"
+              aria-label="Follow Paws on Shine on Instagram"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.9 2.15a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 6.5A5.5 5.5 0 1 1 6.5 12 5.5 5.5 0 0 1 12 6.5Zm0 1.5A4 4 0 1 0 16 12a4 4 0 0 0-4-4Z" />
               </svg>
             </a>
-            <a class="button button--primary" href="#contact"><span class="button__icon" aria-hidden="true">🐾</span><span>Book Now</span></a>
           </div>
         </div>
       </header>
@@ -59,7 +125,7 @@
               <span class="eyebrow">Soft, one-on-one mobile grooming in Corona</span>
               <h1>Mobile dog grooming that brings the calm to your curb</h1>
               <p class="hero__lead">
-                Pause On Shine helps Corona pups look adorable and feel comfortable with one-on-one
+                Paws on Shine helps Corona pups look adorable and feel comfortable with one-on-one
                 mobile grooming, thoughtful handling, and a light, polished experience without the
                 stress of a salon drop-off.
               </p>
@@ -86,14 +152,14 @@
           <div class="container about__layout">
             <img
               class="about__image"
-              src="about-groomer.jpeg"
-              alt="A dog groomer smiling while grooming a fluffy white dog during a mobile grooming appointment"
+              src="about-steph-pawsonshine.webp"
+              alt="Paws on Shine groomer holding a freshly groomed dog inside the mobile grooming van"
             />
             <div class="about__card about__card--split">
-              <span class="eyebrow">About Pause On Shine</span>
+              <span class="eyebrow">About Paws on Shine</span>
               <h2>Gentle mobile grooming made to feel easy for dogs and their people</h2>
               <p>
-                Pause On Shine is built around a calmer rhythm: fewer distractions, one-on-one attention,
+                Paws on Shine is built around a calmer rhythm: fewer distractions, one-on-one attention,
                 and a mobile setup that comes right to your home in Corona. That means less rushing for you
                 and a more comfortable appointment for your pup.
               </p>
@@ -101,7 +167,7 @@
                 Our goal is simple: send every dog home looking adorable, feeling fresh, and ready to shine
                 after a kind, personalized grooming visit.
               </p>
-              <a class="button button--primary about__button" href="mailto:hello@pauseonshine.com"><span class="service-card__paw" aria-hidden="true">🐾</span><span>Ask About Mobile Booking</span></a>
+              <a class="button button--primary about__button" href="mailto:hello@pawsonshine.com"><span class="service-card__paw" aria-hidden="true">🐾</span><span>Ask About Mobile Booking</span></a>
             </div>
           </div>
         </section>
@@ -234,18 +300,19 @@
           <div class="container">
             <div class="section-heading">
               <span class="eyebrow">Photos</span>
-              <h2>Some Pause On Shine grooming highlights.</h2>
+              <h2>Some Paws on Shine grooming highlights.</h2>
               <p>
                 Fresh trims, happy faces, and polished finishes that show the kind of clean, feel-good
                 mobile grooming Corona pet parents can expect from every visit.
               </p>
             </div>
             <div class="photo-grid">
-              <img class="gallery-image gallery-image--1" src="gallery-groomed-1.jpg" alt="Freshly groomed white dog wearing a green bandana" />
-              <img class="gallery-image gallery-image--2" src="gallery-groomed-2.jpg" alt="Freshly groomed light-colored dog standing on a grooming table" />
-              <img class="gallery-image gallery-image--3" src="gallery-groomed-3.jpg" alt="Freshly groomed black and white dog with a purple lead" />
-              <img class="gallery-image gallery-image--4" src="gallery-groomed-5.jpg" alt="Freshly groomed white poodle with a styled haircut" />
-              <img class="gallery-image gallery-image--5" src="gallery-groomed-6.jpg" alt="Freshly groomed tan dog wearing a patterned bandana" />
+              <img class="gallery-image" src="pause-highlight-1.webp" alt="Freshly groomed dark-coated dog wearing a pink floral bandana" />
+              <img class="gallery-image" src="pause-highlight-2.webp" alt="Freshly groomed gray and white dog smiling on a grooming table" />
+              <img class="gallery-image" src="pause-highlight-3.webp" alt="Freshly groomed brown and white dog sitting calmly after grooming" />
+              <img class="gallery-image" src="pause-highlight-4.webp" alt="Freshly groomed curly-coated dog posing in front of a happy groom day sign" />
+              <img class="gallery-image" src="pause-highlight-5.webp" alt="Freshly groomed small dog with large ears wearing a bow tie" />
+              <img class="gallery-image" src="pause-highlight-6.webp" alt="Freshly groomed white and tan spaniel sitting on a grooming table" />
             </div>
           </div>
         </section>
@@ -329,11 +396,11 @@
             <div>
               <span class="eyebrow">Ready to book?</span>
               <h2>Let’s get your pup scheduled for a soft, shiny, stress-free groom.</h2>
-              <p>Reach out to Pause On Shine to ask about availability, service areas, and the best mobile grooming option for your dog.</p>
+              <p>Reach out to Paws on Shine to ask about availability, service areas, and the best mobile grooming option for your dog.</p>
             </div>
             <div class="cta-card__actions">
-              <a class="button button--primary" href="tel:+19515550137">(951) 555-0137</a>
-              <a class="button button--secondary" href="mailto:hello@pauseonshine.com">Email Us</a>
+              <a class="button button--primary" href="tel:+19515887284">(951) 588-7284</a>
+              <a class="button button--secondary" href="mailto:hello@pawsonshine.com">Email Us</a>
             </div>
           </div>
         </section>
@@ -345,7 +412,7 @@
             <a class="brand-mark brand-mark--footer" href="#top">
               <span class="brand-mark__icon">✿</span>
               <span>
-                <strong>Pause On Shine</strong>
+                <strong>Paws on Shine</strong>
                 <small>Mobile Grooming in Corona, CA</small>
               </span>
             </a>
@@ -362,14 +429,14 @@
             <a href="#contact">Book</a>
           </div>
           <div class="footer-contact">
-            <a href="tel:+19515550137">(951) 555-0137</a>
-            <a href="mailto:hello@pauseonshine.com">hello@pauseonshine.com</a>
+            <a href="tel:+19515887284">(951) 588-7284</a>
+            <a href="mailto:hello@pawsonshine.com">hello@pawsonshine.com</a>
             <a
               class="social-icon-link social-icon-link--footer"
               href="https://www.instagram.com/paws_on_shine/"
               target="_blank"
               rel="noreferrer"
-              aria-label="Follow Pause On Shine on Instagram"
+              aria-label="Follow Paws on Shine on Instagram"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.9 2.15a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 6.5A5.5 5.5 0 1 1 6.5 12 5.5 5.5 0 0 1 12 6.5Zm0 1.5A4 4 0 1 0 16 12a4 4 0 0 0-4-4Z" />
@@ -381,10 +448,31 @@
       </footer>
 
       <aside class="chat-widget" aria-label="Chat with us">
-        <a class="chat-widget__bubble" href="mailto:hello@pauseonshine.com" aria-label="Chat with us">
+        <a class="chat-widget__bubble" href="mailto:hello@pawsonshine.com" aria-label="Chat with us">
           <span aria-hidden="true">🐾</span>
         </a>
       </aside>
     </div>
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const siteHeader = document.querySelector('.site-header');
+      const siteNav = document.getElementById('site-nav');
+
+      if (navToggle && siteHeader && siteNav) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = siteHeader.classList.toggle('is-menu-open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+          navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+        });
+
+        siteNav.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            siteHeader.classList.remove('is-menu-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.setAttribute('aria-label', 'Open menu');
+          });
+        });
+      }
+    </script>
   </body>
 </html>
