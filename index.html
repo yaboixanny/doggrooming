@@ -172,6 +172,27 @@
           </div>
         </section>
 
+        <section class="section photos section--paws" id="photos">
+          <div class="container">
+            <div class="section-heading">
+              <span class="eyebrow">Photos</span>
+              <h2>Some Paws on Shine Corona mobile grooming highlights.</h2>
+              <p>
+                Fresh trims, happy faces, and polished finishes that show the kind of clean, feel-good
+                Corona mobile grooming pet parents can expect from every visit.
+              </p>
+            </div>
+            <div class="photo-grid">
+              <img class="gallery-image" src="pause-highlight-1.webp" alt="Freshly groomed dark-coated dog wearing a pink floral bandana" />
+              <img class="gallery-image" src="pause-highlight-2.webp" alt="Freshly groomed gray and white dog smiling on a grooming table" />
+              <img class="gallery-image" src="pause-highlight-3.webp" alt="Freshly groomed brown and white dog sitting calmly after grooming" />
+              <img class="gallery-image" src="pause-highlight-4.webp" alt="Freshly groomed curly-coated dog posing in front of a happy groom day sign" />
+              <img class="gallery-image" src="pause-highlight-5.webp" alt="Freshly groomed small dog with large ears wearing a bow tie" />
+              <img class="gallery-image" src="pause-highlight-6.webp" alt="Freshly groomed white and tan spaniel sitting on a grooming table" />
+            </div>
+          </div>
+        </section>
+
         <section class="section services" id="services">
           <div class="container">
             <div class="section-heading">
@@ -265,54 +286,38 @@
               <span class="eyebrow">Pricing</span>
               <h2>Our starting prices for mobile dog grooming in Corona, CA</h2>
               <p>
-                Pricing is easy to understand up front. Final quotes may shift a little based on coat
-                condition, breed, matting, travel distance, or if extra time is needed for comfort and safety.
+                Pricing is easy to understand up front. Final pricing may increase based on coat condition,
+                matting, coat type, or if extra time and handling are needed for comfort and safety.
               </p>
               <a class="button button--primary pricing__button" href="#contact"><span class="service-card__paw" aria-hidden="true">🐾</span><span>Book a Grooming</span></a>
             </div>
             <div class="pricing-table">
               <article class="price-card price-card--featured">
                 <div class="price-card__tag">Most Popular</div>
-                <h3>Full Groom</h3>
-                <p class="price-card__value">From $75</p>
-                <p>Bath, brush, haircut, nails, ear cleaning, and finishing spritz.</p>
+                <h3>Haircuts</h3>
+                <p class="price-card__value">From $120</p>
+                <p>Small dogs $120+, medium dogs $150+, and large dogs $175+.</p>
               </article>
               <article class="price-card">
-                <h3>Bath & Brush</h3>
-                <p class="price-card__value">From $45</p>
-                <p>Perfect for keeping coats fresh between haircuts.</p>
+                <h3>Small Bath</h3>
+                <p class="price-card__value">From $95</p>
+                <p>Bath service for small dogs with freshening and finishing care.</p>
               </article>
               <article class="price-card">
-                <h3>Puppy Intro</h3>
-                <p class="price-card__value">From $55</p>
-                <p>Gentle intro with light cleanup and lots of patience.</p>
+                <h3>Medium Bath</h3>
+                <p class="price-card__value">From $110</p>
+                <p>Bath service for medium dogs with gentle handling and cleanup.</p>
               </article>
               <article class="price-card">
-                <h3>Mini Tidy-Up</h3>
-                <p class="price-card__value">From $35</p>
-                <p>Quick maintenance visit for face, feet, and sanitary care.</p>
+                <h3>Large Bath</h3>
+                <p class="price-card__value">From $130</p>
+                <p>Bath service for large dogs with coat care and a polished finish.</p>
               </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section photos section--paws" id="photos">
-          <div class="container">
-            <div class="section-heading">
-              <span class="eyebrow">Photos</span>
-              <h2>Some Paws on Shine Corona mobile grooming highlights.</h2>
-              <p>
-                Fresh trims, happy faces, and polished finishes that show the kind of clean, feel-good
-                Corona mobile grooming pet parents can expect from every visit.
-              </p>
-            </div>
-            <div class="photo-grid">
-              <img class="gallery-image" src="pause-highlight-1.webp" alt="Freshly groomed dark-coated dog wearing a pink floral bandana" />
-              <img class="gallery-image" src="pause-highlight-2.webp" alt="Freshly groomed gray and white dog smiling on a grooming table" />
-              <img class="gallery-image" src="pause-highlight-3.webp" alt="Freshly groomed brown and white dog sitting calmly after grooming" />
-              <img class="gallery-image" src="pause-highlight-4.webp" alt="Freshly groomed curly-coated dog posing in front of a happy groom day sign" />
-              <img class="gallery-image" src="pause-highlight-5.webp" alt="Freshly groomed small dog with large ears wearing a bow tie" />
-              <img class="gallery-image" src="pause-highlight-6.webp" alt="Freshly groomed white and tan spaniel sitting on a grooming table" />
+              <article class="price-card">
+                <h3>Add-Ons</h3>
+                <p class="price-card__value">From $25</p>
+                <p>Doodles and double-coated dogs add $25+, matted coats add $35+, and extra handling adds $35+.</p>
+              </article>
             </div>
           </div>
         </section>
@@ -452,11 +457,20 @@
           <span aria-hidden="true">🐾</span>
         </a>
       </aside>
+
+      <div class="mobile-callbar" aria-hidden="true">
+        <a class="mobile-callbar__button" href="tel:+19515887284">
+          <span aria-hidden="true">📞</span>
+          <span>Call Now</span>
+          <span>(951) 588-7284</span>
+        </a>
+      </div>
     </div>
     <script>
       const navToggle = document.querySelector('.nav-toggle');
       const siteHeader = document.querySelector('.site-header');
       const siteNav = document.getElementById('site-nav');
+      const mobileCallbar = document.querySelector('.mobile-callbar');
 
       if (navToggle && siteHeader && siteNav) {
         navToggle.addEventListener('click', () => {
@@ -472,6 +486,20 @@
             navToggle.setAttribute('aria-label', 'Open menu');
           });
         });
+      }
+
+      if (mobileCallbar) {
+        const toggleCallbar = () => {
+          const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const threshold = scrollableHeight > 0 ? scrollableHeight * 0.07 : 0;
+          const shouldShow = window.innerWidth <= 760 && window.scrollY > threshold;
+          mobileCallbar.classList.toggle('is-visible', shouldShow);
+          mobileCallbar.setAttribute('aria-hidden', String(!shouldShow));
+        };
+
+        toggleCallbar();
+        window.addEventListener('scroll', toggleCallbar, { passive: true });
+        window.addEventListener('resize', toggleCallbar);
       }
     </script>
   </body>
