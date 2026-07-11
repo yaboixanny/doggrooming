@@ -883,6 +883,19 @@ img {
   gap: 0.75rem;
 }
 
+.footer-map {
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(109, 43, 194, 0.14);
+  box-shadow: 0 12px 28px rgba(88, 28, 135, 0.08);
+}
+
+.footer-map iframe {
+  display: block;
+  width: 100%;
+  min-height: 260px;
+}
+
 .social-icon-link--footer {
   width: 2.9rem;
   height: 2.9rem;
