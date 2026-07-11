@@ -939,13 +939,20 @@ img {
 
 @media (max-width: 760px) {
   .site-header {
-    position: static;
+    position: relative;
+    z-index: 80;
+    overflow: visible;
+  }
+
+  .site-header.is-menu-open {
+    z-index: 120;
   }
 
   .nav-bar {
     position: relative;
     flex-wrap: nowrap;
     gap: 0.6rem;
+    z-index: 2;
   }
 
   .brand-mark {
@@ -965,17 +972,22 @@ img {
   .site-nav {
     position: absolute;
     top: calc(100% + 0.65rem);
-    left: 0;
-    right: 0;
+    left: 0.25rem;
+    right: auto;
+    min-width: 13rem;
+    width: max-content;
+    max-width: calc(100vw - 2rem);
     display: none;
     flex-direction: column;
     gap: 0.25rem;
-    padding: 1rem;
+    padding: 0.9rem;
     border-radius: 22px;
-    background: rgba(255, 250, 255, 0.98);
-    border: 1px solid rgba(109, 43, 194, 0.12);
-    box-shadow: 0 18px 40px rgba(88, 28, 135, 0.14);
+    background: #fffaff;
+    border: 1px solid rgba(109, 43, 194, 0.2);
+    box-shadow: 0 22px 48px rgba(88, 28, 135, 0.22);
     text-align: left;
+    z-index: 60;
+    isolation: isolate;
   }
 
   .site-header.is-menu-open .site-nav {
@@ -983,7 +995,16 @@ img {
   }
 
   .site-nav a {
-    padding: 0.7rem 0.2rem;
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0.85rem;
+    border-radius: 14px;
+    background: transparent;
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus-visible {
+    background: rgba(109, 43, 194, 0.08);
   }
 
   .nav-toggle {
