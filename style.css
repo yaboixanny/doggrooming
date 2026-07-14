@@ -728,6 +728,117 @@ img {
   gap: 1.1rem;
 }
 
+.instagram-profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.35rem;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 20px 50px rgba(88, 28, 135, 0.1);
+  text-align: center;
+}
+
+.instagram-profile-card__identity {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.instagram-profile-card__avatar {
+  width: 4.7rem;
+  height: 4.7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow:
+    0 0 0 3px rgba(255, 47, 146, 0.6),
+    0 0 0 7px rgba(255, 146, 77, 0.28);
+}
+
+.instagram-profile-card__text h3 {
+  margin: 0;
+  font-size: clamp(1.3rem, 2.3vw, 2rem);
+  line-height: 1.1;
+}
+
+.instagram-profile-card__text p {
+  margin: 0.2rem 0 0;
+  color: #767676;
+  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+  line-height: 1.2;
+}
+
+.instagram-profile-card__stats {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.instagram-profile-card__stats div {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  gap: 0.12rem;
+  min-width: 0;
+}
+
+.instagram-profile-card__stats strong {
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  line-height: 1;
+}
+
+.instagram-profile-card__stats span {
+  color: #7c7c7c;
+  font-size: clamp(0.8rem, 1.2vw, 0.95rem);
+}
+
+.instagram-profile-card__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 3.15rem;
+  padding: 0.8rem 1.25rem;
+  border-radius: 12px;
+  background: #1f95e8;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 16px 30px rgba(31, 149, 232, 0.22);
+}
+
+.instagram-profile-card__button:hover {
+  background: #1686d4;
+}
+
+.instagram-profile-card__button svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: currentColor;
+}
+
+.photo-grid--instagram-manual {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.instagram-photo-tile {
+  display: block;
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: 0 12px 34px rgba(88, 28, 135, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.instagram-photo-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(88, 28, 135, 0.14);
+}
+
 .gallery-image {
   width: 100%;
   aspect-ratio: 3 / 4;
@@ -737,6 +848,17 @@ img {
   border-radius: 30px;
   border: 1px solid rgba(109, 43, 194, 0.12);
   box-shadow: 0 12px 34px rgba(88, 28, 135, 0.1);
+}
+
+.gallery-image--square {
+  aspect-ratio: 1 / 1;
+  border-radius: 28px;
+  box-shadow: none;
+  transition: transform 0.35s ease;
+}
+
+.instagram-photo-tile:hover .gallery-image--square {
+  transform: scale(1.04);
 }
 
 .about__layout,
@@ -1074,6 +1196,10 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .instagram-profile-card {
+    padding: 1.6rem 1.2rem;
+  }
+
   .hero h1 {
     max-width: 13ch;
   }
@@ -1185,6 +1311,70 @@ img {
   .photo-grid,
   .intake-form__grid {
     grid-template-columns: 1fr;
+  }
+
+  .instagram-profile-card {
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1.15rem 0.95rem;
+    border-radius: 22px;
+    text-align: left;
+  }
+
+  .instagram-profile-card__identity {
+    align-items: center;
+    gap: 0.8rem;
+    text-align: left;
+  }
+
+  .instagram-profile-card__avatar {
+    width: 3.4rem;
+    height: 3.4rem;
+    box-shadow:
+      0 0 0 2px rgba(255, 47, 146, 0.55),
+      0 0 0 5px rgba(255, 146, 77, 0.22);
+  }
+
+  .instagram-profile-card__text h3 {
+    font-size: 1rem;
+  }
+
+  .instagram-profile-card__text p {
+    font-size: 0.84rem;
+  }
+
+  .instagram-profile-card__stats div {
+    align-items: flex-start;
+  }
+
+  .instagram-profile-card__stats {
+    gap: 0.45rem;
+    padding-top: 0.1rem;
+  }
+
+  .instagram-profile-card__stats strong {
+    font-size: 0.98rem;
+  }
+
+  .instagram-profile-card__stats span {
+    font-size: 0.72rem;
+  }
+
+  .instagram-profile-card__button {
+    width: 100%;
+    max-width: none;
+    min-height: 2.8rem;
+    font-size: 0.95rem;
+  }
+
+  .photo-grid--instagram-manual {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
+  .instagram-photo-tile,
+  .gallery-image--square {
+    border-radius: 20px;
   }
 
   .section {
