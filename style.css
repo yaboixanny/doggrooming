@@ -891,12 +891,6 @@ img {
   margin: 1rem 0 0;
 }
 
-.about__button {
-  gap: 0.55rem;
-  margin-top: 1.4rem;
-  width: fit-content;
-}
-
 .service-area {
   background: var(--surface);
 }
